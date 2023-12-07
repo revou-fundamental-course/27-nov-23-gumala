@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik Segitiga</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=""></a>KATIK</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Luas">Luas</a></li>
+                    <li><a href="#Keliling">Keliling</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <!--untuk home-->
+        <section id="home">
+            <img src="https://img.freepik.com/premium-vector/illustration-ruler_498740-30190.jpg?size=626&ext=jpg&ga=GA1.1.1493284379.1701840351&semt=ais" alt="">
+            <div class="kolom">
+                <p class="diskripsi">Welcome to Kalkulator Matematik Segitiga or <span class="Katik">KATIK</span></p>
+                <h2>WEB ini dapat membantu kalian unuk menghitung luas dan keliling segitiga</h2>
+                <p class="diskripsi2">hitung segitiga jadi semudah membalikkan telapak tangan</p>
+            </div>
+        </section>
+
+        <!--untuk keliling-->
+        <section id="Keliling">
+            <div class="kolom">
+                <h2>Hitung <span class="Katik">Keliling</span> di sini!</h2>
+                <p>silahkan input angka di bawah ini:</p>
+                <section class="input-keliling-section">
+                    <!--input-tsisi-->
+                    <label for="input-sisi" id="label-sisi">Sisi 1</label>
+                    <input type="number" id="input-sisi-1" name="input-sisi-1" class="katik-input" placeholder="input sisi 1">
+                    <label for="input-sisi" id="label-sisi">Sisi 2</label>
+                    <input type="number" id="input-sisi-2" name="input-sisi-2" class="katik-input" placeholder="input sisi 2">
+                    <label for="input-sisi" id="label-sisi">Sisi 3</label>
+                    <input type="number" id="input-sisi-3" name="input-sisi-3" class="katik-input" placeholder="input sisi 3">
+                     <!--input-hasil-->
+                    <label for="input-hasil" id="label-hasil">Hasil</label>
+                    <input type="text" size="5" class="input-hasil" id="hasilk"  name="hasil" autocomplete="off" />
+
+                    <button onclick="hitungk()" class="hitungk">Hitung</button>
+                    <button onclick="resetk()" class="resetk">Reset</button>
+                </section>
+            </div>
+            <img src="assets/Keliling Segitiga.jpg" alt="">
+        </section>
+
+        <!--untuk luas-->
+        <section id="Luas">
+            <img src="assets/Luas segitiga.jpg" alt="">
+            <div class="kolom">
+                <h2>Hitung <span class="Katik">Luas</span> di sini!</h2>
+                <p>silahkan input angka di bawah ini:</p>
+                <section class="input-luas-section">
+                    <!--input-tinggi-->
+                    <label for="input-tinggi" id="label-tinggi">Tinggi</label>
+                    <input type="number" id="input-tinggi" name="input-tinggi" class="katik-input" placeholder="input tinggi">
+                    <!--input-alas-->
+                    <label for="input-alas" id="label-alas">Alas</label>
+                    <input type="number" id="input-alas" name="input-alas" class="katik-input" placeholder="input alas">
+                    <label for="input-hasil" id="label-hasil">Hasil</label>
+                    <input type="text" size="5" class="input-hasil" id="hasil"  name="hasil" autocomplete="off" />
+
+                    <button onclick="hitung()" class="hitung">Hitung</button>
+                    <button onclick="reset()" class="reset">Reset</button>
+                </section>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
